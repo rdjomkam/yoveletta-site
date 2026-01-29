@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{AGENTURNAME}} - Ihre IT-Agentur für digitale Lösungen, Software-Entwicklung und IT-Beratung in {{STADT}}.">
+  <title>{{AGENTURNAME}} | IT-Agentur für digitale Lösungen</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">
+          {{AGENTURNAME}}<span>.</span>
+        </a>
+
+        <nav class="header__nav">
+          <a href="#leistungen" class="header__nav-link">Leistungen</a>
+          <a href="#projekte" class="header__nav-link">Projekte</a>
+          <a href="#ueber-uns" class="header__nav-link">Über uns</a>
+          <a href="#prozess" class="header__nav-link">Prozess</a>
+          <a href="#blog" class="header__nav-link">Blog</a>
+        </nav>
+
+        <div class="header__actions">
+          <a href="#kontakt" class="btn btn--primary header__cta">
+            Beratung anfragen
+          </a>
+          <button class="header__menu-toggle" aria-label="Menü öffnen">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu__header">
+      <a href="#" class="header__logo">
+        {{AGENTURNAME}}<span>.</span>
+      </a>
+      <button class="mobile-menu__close" aria-label="Menü schließen">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <nav class="mobile-menu__nav">
+      <a href="#leistungen" class="mobile-menu__link">Leistungen</a>
+      <a href="#projekte" class="mobile-menu__link">Projekte</a>
+      <a href="#ueber-uns" class="mobile-menu__link">Über uns</a>
+      <a href="#prozess" class="mobile-menu__link">Prozess</a>
+      <a href="#blog" class="mobile-menu__link">Blog</a>
+    </nav>
+    <div class="mobile-menu__cta">
+      <a href="#kontakt" class="btn btn--primary btn--lg" style="width: 100%;">
+        Beratung anfragen
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <div class="hero__label">
+              <i data-lucide="sparkles"></i>
+              Ihre IT-Agentur in {{STADT}}
+            </div>
+            <h1 class="hero__title">
+              Digitale Lösungen, die Ihr <span class="hero__title-highlight">Unternehmen voranbringen</span>
+            </h1>
+            <p class="hero__description">
+              Wir entwickeln maßgeschneiderte Software, modernisieren IT-Infrastrukturen und begleiten Sie auf dem Weg zur digitalen Transformation.
+            </p>
+            <div class="hero__actions">
+              <a href="#kontakt" class="btn btn--primary btn--lg">
+                Projekt starten
+                <i data-lucide="arrow-right"></i>
+              </a>
+              <a href="#leistungen" class="btn btn--secondary btn--lg">
+                Leistungen entdecken
+              </a>
+            </div>
+            <div class="hero__stats">
+              <div class="hero__stat">
+                <div class="hero__stat-value">150+</div>
+                <div class="hero__stat-label">Projekte realisiert</div>
+              </div>
+              <div class="hero__stat">
+                <div class="hero__stat-value">98%</div>
+                <div class="hero__stat-label">Kundenzufriedenheit</div>
+              </div>
+              <div class="hero__stat">
+                <div class="hero__stat-value">10+</div>
+                <div class="hero__stat-label">Jahre Erfahrung</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="hero__image">
+              <i data-lucide="code-2"></i>
+            </div>
+
+            <!-- Floating Cards -->
+            <div class="hero__card hero__card--1">
+              <div class="hero__card-icon hero__card-icon--success">
+                <i data-lucide="check-circle"></i>
+              </div>
+              <div class="hero__card-content">
+                <div class="hero__card-title">Projekt abgeschlossen</div>
+                <div class="hero__card-text">E-Commerce Platform</div>
+              </div>
+            </div>
+
+            <div class="hero__card hero__card--2">
+              <div class="hero__card-icon hero__card-icon--primary">
+                <i data-lucide="trending-up"></i>
+              </div>
+              <div class="hero__card-content">
+                <div class="hero__card-title">+45% Performance</div>
+                <div class="hero__card-text">Nach Optimierung</div>
+              </div>
+            </div>
+
+            <div class="hero__card hero__card--3">
+              <div class="hero__card-icon hero__card-icon--warning">
+                <i data-lucide="zap"></i>
+              </div>
+              <div class="hero__card-content">
+                <div class="hero__card-title">Agile Entwicklung</div>
+                <div class="hero__card-text">2-Wochen Sprints</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LOGO BAR ==================== -->
+    <section class="logos">
+      <div class="container">
+        <p class="logos__title">Vertraut von führenden Unternehmen</p>
+        <div class="logos__grid">
+          <div class="logos__item">{{KUNDE_1_LOGO}}</div>
+          <div class="logos__item">{{KUNDE_2_LOGO}}</div>
+          <div class="logos__item">{{KUNDE_3_LOGO}}</div>
+          <div class="logos__item">{{KUNDE_4_LOGO}}</div>
+          <div class="logos__item">{{KUNDE_5_LOGO}}</div>
+          <div class="logos__item">{{KUNDE_6_LOGO}}</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LEISTUNGEN ==================== -->
+    <section id="leistungen" class="section section--lg">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Unsere Leistungen</span>
+          <h2 class="section__title">Was wir für Sie tun können</h2>
+          <p class="section__description">
+            Von der Konzeption bis zur Umsetzung bieten wir Ihnen das komplette Spektrum an IT-Dienstleistungen.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__icon">
+              <i data-lucide="code"></i>
+            </div>
+            <h3 class="service-card__title">Software-Entwicklung</h3>
+            <p class="service-card__description">
+              Individuelle Softwarelösungen, Web-Anwendungen und Mobile Apps nach Ihren Anforderungen.
+            </p>
+            <a href="#" class="service-card__link">
+              Mehr erfahren
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <i data-lucide="cloud"></i>
+            </div>
+            <h3 class="service-card__title">Cloud & Infrastructure</h3>
+            <p class="service-card__description">
+              Migration, Optimierung und Management Ihrer Cloud-Infrastruktur für maximale Effizienz.
+            </p>
+            <a href="#" class="service-card__link">
+              Mehr erfahren
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <h3 class="service-card__title">IT-Security</h3>
+            <p class="service-card__description">
+              Schützen Sie Ihre Daten und Systeme mit unseren umfassenden Sicherheitslösungen.
+            </p>
+            <a href="#" class="service-card__link">
+              Mehr erfahren
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <i data-lucide="lightbulb"></i>
+            </div>
+            <h3 class="service-card__title">IT-Beratung</h3>
+            <p class="service-card__description">
+              Strategische Beratung für Ihre digitale Transformation und IT-Strategie.
+            </p>
+            <a href="#" class="service-card__link">
+              Mehr erfahren
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <i data-lucide="database"></i>
+            </div>
+            <h3 class="service-card__title">Datenmanagement</h3>
+            <p class="service-card__description">
+              Effiziente Datenverwaltung, Analytics und Business Intelligence für bessere Entscheidungen.
+            </p>
+            <a href="#" class="service-card__link">
+              Mehr erfahren
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <i data-lucide="headphones"></i>
+            </div>
+            <h3 class="service-card__title">IT-Support</h3>
+            <p class="service-card__description">
+              Zuverlässiger Support und Wartung für Ihre IT-Systeme rund um die Uhr.
+            </p>
+            <a href="#" class="service-card__link">
+              Mehr erfahren
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CASE STUDIES ==================== -->
+    <section id="projekte" class="section section--lg section--dark">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label" style="color: var(--color-primary-400);">Case Studies</span>
+          <h2 class="section__title">Ausgewählte Projekte</h2>
+          <p class="section__description" style="color: var(--color-neutral-400);">
+            Entdecken Sie, wie wir Unternehmen bei der digitalen Transformation unterstützt haben.
+          </p>
+        </div>
+
+        <div class="cases__grid">
+          <article class="case-card">
+            <div class="case-card__image">
+              <i data-lucide="shopping-cart"></i>
+            </div>
+            <div class="case-card__content">
+              <span class="case-card__tag">E-Commerce</span>
+              <h3 class="case-card__title">Online-Shop Relaunch für Modehändler</h3>
+              <p class="case-card__description">
+                Komplette Neuentwicklung des Online-Shops mit verbesserter User Experience.
+              </p>
+              <div class="case-card__stats">
+                <div class="case-card__stat">
+                  <div class="case-card__stat-value">+120%</div>
+                  <div class="case-card__stat-label">Conversion Rate</div>
+                </div>
+                <div class="case-card__stat">
+                  <div class="case-card__stat-value">-40%</div>
+                  <div class="case-card__stat-label">Ladezeit</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-card__image">
+              <i data-lucide="factory"></i>
+            </div>
+            <div class="case-card__content">
+              <span class="case-card__tag">Industrie 4.0</span>
+              <h3 class="case-card__title">Digitalisierung der Produktion</h3>
+              <p class="case-card__description">
+                IoT-Integration und Echtzeit-Monitoring für einen Fertigungsbetrieb.
+              </p>
+              <div class="case-card__stats">
+                <div class="case-card__stat">
+                  <div class="case-card__stat-value">+35%</div>
+                  <div class="case-card__stat-label">Effizienz</div>
+                </div>
+                <div class="case-card__stat">
+                  <div class="case-card__stat-value">-25%</div>
+                  <div class="case-card__stat-label">Ausfallzeiten</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-card__image">
+              <i data-lucide="building-2"></i>
+            </div>
+            <div class="case-card__content">
+              <span class="case-card__tag">Fintech</span>
+              <h3 class="case-card__title">Banking-App für Regionalbank</h3>
+              <p class="case-card__description">
+                Entwicklung einer modernen Mobile-Banking Lösung mit höchsten Sicherheitsstandards.
+              </p>
+              <div class="case-card__stats">
+                <div class="case-card__stat">
+                  <div class="case-card__stat-value">50k+</div>
+                  <div class="case-card__stat-label">Aktive Nutzer</div>
+                </div>
+                <div class="case-card__stat">
+                  <div class="case-card__stat-value">4.8</div>
+                  <div class="case-card__stat-label">App Store Rating</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WARUM WIR ==================== -->
+    <section id="ueber-uns" class="section section--lg section--light">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Warum {{AGENTURNAME}}</span>
+          <h2 class="section__title">Was uns auszeichnet</h2>
+          <p class="section__description">
+            Mit uns haben Sie einen zuverlässigen Partner an Ihrer Seite, der Ihre Ziele versteht.
+          </p>
+        </div>
+
+        <div class="benefits__grid">
+          <div class="benefit">
+            <div class="benefit__icon">
+              <i data-lucide="users"></i>
+            </div>
+            <h3 class="benefit__title">Erfahrenes Team</h3>
+            <p class="benefit__description">
+              Zertifizierte Experten mit jahrelanger Erfahrung in verschiedenen Branchen.
+            </p>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit__icon">
+              <i data-lucide="target"></i>
+            </div>
+            <h3 class="benefit__title">Kundenorientiert</h3>
+            <p class="benefit__description">
+              Ihre Ziele stehen im Mittelpunkt. Wir hören zu und liefern passgenaue Lösungen.
+            </p>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit__icon">
+              <i data-lucide="rocket"></i>
+            </div>
+            <h3 class="benefit__title">Agile Methoden</h3>
+            <p class="benefit__description">
+              Flexible Entwicklung mit kurzen Iterationen für schnelle Ergebnisse.
+            </p>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit__icon">
+              <i data-lucide="heart-handshake"></i>
+            </div>
+            <h3 class="benefit__title">Langfristige Partnerschaft</h3>
+            <p class="benefit__description">
+              Wir begleiten Sie auch nach dem Projektabschluss mit Support und Weiterentwicklung.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROZESS ==================== -->
+    <section id="prozess" class="section section--lg">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Unser Prozess</span>
+          <h2 class="section__title">So arbeiten wir zusammen</h2>
+          <p class="section__description">
+            Ein strukturierter Prozess für erfolgreiche Projekte.
+          </p>
+        </div>
+
+        <div class="process__timeline">
+          <div class="process__step">
+            <div class="process__step-indicator">
+              <div class="process__step-number">1</div>
+              <div class="process__step-line"></div>
+            </div>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Analyse & Beratung</h3>
+              <p class="process__step-description">
+                Wir verstehen Ihre Anforderungen und entwickeln eine maßgeschneiderte Strategie.
+              </p>
+            </div>
+          </div>
+
+          <div class="process__step">
+            <div class="process__step-indicator">
+              <div class="process__step-number">2</div>
+              <div class="process__step-line"></div>
+            </div>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Konzeption & Design</h3>
+              <p class="process__step-description">
+                Wir entwerfen die Architektur und das Design Ihrer Lösung.
+              </p>
+            </div>
+          </div>
+
+          <div class="process__step">
+            <div class="process__step-indicator">
+              <div class="process__step-number">3</div>
+              <div class="process__step-line"></div>
+            </div>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Entwicklung & Testing</h3>
+              <p class="process__step-description">
+                Agile Entwicklung mit regelmäßigen Abstimmungen und Qualitätssicherung.
+              </p>
+            </div>
+          </div>
+
+          <div class="process__step">
+            <div class="process__step-indicator">
+              <div class="process__step-number">4</div>
+              <div class="process__step-line"></div>
+            </div>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Launch & Support</h3>
+              <p class="process__step-description">
+                Go-Live und kontinuierliche Betreuung für nachhaltigen Erfolg.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIAL ==================== -->
+    <section class="section section--lg testimonial">
+      <div class="container">
+        <div class="testimonial__content">
+          <svg class="testimonial__quote-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+          </svg>
+          <blockquote class="testimonial__quote">
+            "Die Zusammenarbeit mit {{AGENTURNAME}} war herausragend. Das Team hat unsere Vision perfekt umgesetzt und dabei stets unsere Geschäftsziele im Blick behalten. Die neue Plattform hat unsere Erwartungen übertroffen."
+          </blockquote>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">MK</div>
+            <div class="testimonial__author-info">
+              <div class="testimonial__author-name">Max Kunze</div>
+              <div class="testimonial__author-role">Geschäftsführer, TechVentures GmbH</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA ==================== -->
+    <section id="kontakt" class="section section--lg cta">
+      <div class="container">
+        <div class="cta__inner">
+          <h2 class="cta__title">Bereit für Ihr nächstes Projekt?</h2>
+          <p class="cta__description">
+            Lassen Sie uns gemeinsam Ihre digitale Zukunft gestalten. Vereinbaren Sie ein unverbindliches Beratungsgespräch.
+          </p>
+          <div class="cta__actions">
+            <a href="tel:{{TELEFON}}" class="btn btn--white btn--lg">
+              <i data-lucide="phone"></i>
+              {{TELEFON}}
+            </a>
+            <a href="mailto:{{EMAIL}}" class="btn btn--outline btn--lg" style="border-color: #fff; color: #fff;">
+              <i data-lucide="mail"></i>
+              E-Mail schreiben
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BLOG ==================== -->
+    <section id="blog" class="section section--lg">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Blog & Insights</span>
+          <h2 class="section__title">Neueste Artikel</h2>
+          <p class="section__description">
+            Bleiben Sie informiert über aktuelle Trends und Best Practices in der IT-Welt.
+          </p>
+        </div>
+
+        <div class="blog__grid">
+          <article class="blog-card">
+            <div class="blog-card__image">
+              <i data-lucide="cloud-cog"></i>
+            </div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Cloud</span>
+                <span>15. Januar 2025</span>
+              </div>
+              <h3 class="blog-card__title">Multi-Cloud Strategien für den Mittelstand</h3>
+              <p class="blog-card__excerpt">
+                Erfahren Sie, wie Sie die Vorteile mehrerer Cloud-Anbieter optimal nutzen können.
+              </p>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card__image">
+              <i data-lucide="shield-alert"></i>
+            </div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Security</span>
+                <span>8. Januar 2025</span>
+              </div>
+              <h3 class="blog-card__title">Cybersecurity-Trends 2025: Was Unternehmen wissen müssen</h3>
+              <p class="blog-card__excerpt">
+                Die wichtigsten Sicherheitsbedrohungen und wie Sie sich schützen können.
+              </p>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card__image">
+              <i data-lucide="brain-circuit"></i>
+            </div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">KI & Automation</span>
+                <span>2. Januar 2025</span>
+              </div>
+              <h3 class="blog-card__title">KI in der Praxis: Erfolgreiche Anwendungsfälle</h3>
+              <p class="blog-card__excerpt">
+                Wie Unternehmen künstliche Intelligenz bereits heute gewinnbringend einsetzen.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            {{AGENTURNAME}}<span>.</span>
+          </div>
+          <p class="footer__description">
+            Ihr Partner für digitale Transformation und innovative IT-Lösungen in {{STADT}} und deutschlandweit.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <i data-lucide="twitter"></i>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="GitHub">
+              <i data-lucide="github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__column-title">Leistungen</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Software-Entwicklung</a></li>
+            <li><a href="#" class="footer__link">Cloud & Infrastructure</a></li>
+            <li><a href="#" class="footer__link">IT-Security</a></li>
+            <li><a href="#" class="footer__link">IT-Beratung</a></li>
+            <li><a href="#" class="footer__link">Datenmanagement</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__column-title">Unternehmen</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Über uns</a></li>
+            <li><a href="#" class="footer__link">Karriere</a></li>
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li><a href="#" class="footer__link">Presse</a></li>
+            <li><a href="#" class="footer__link">Partner</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__column-title">Kontakt</h4>
+          <div class="footer__contact-item">
+            <i data-lucide="map-pin"></i>
+            <span>{{STRASSE}} {{HAUSNUMMER}}<br>{{PLZ}} {{STADT}}<br>{{LAND}}</span>
+          </div>
+          <div class="footer__contact-item">
+            <i data-lucide="phone"></i>
+            <a href="tel:{{TELEFON}}">{{TELEFON}}</a>
+          </div>
+          <div class="footer__contact-item">
+            <i data-lucide="mail"></i>
+            <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2025 {{AGENTURNAME}}. Alle Rechte vorbehalten.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Impressum</a>
+          <a href="#" class="footer__legal-link">Datenschutz</a>
+          <a href="#" class="footer__legal-link">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
