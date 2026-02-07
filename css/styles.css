@@ -391,6 +391,11 @@ p:last-child {
   color: var(--color-primary-600);
 }
 
+.header__logo img {
+  height: 2.5rem;
+  width: auto;
+}
+
 .header__nav {
   display: none;
   gap: var(--spacing-8);
@@ -1137,6 +1142,11 @@ p:last-child {
 
 .footer__logo span {
   color: var(--color-primary-400);
+}
+
+.footer__logo img {
+  height: 2.5rem;
+  width: auto;
 }
 
 .footer__description {
