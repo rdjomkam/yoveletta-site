@@ -32,7 +32,6 @@
           <a href="#projekte" class="header__nav-link">Projekte</a>
           <a href="#ueber-uns" class="header__nav-link">Über uns</a>
           <a href="#prozess" class="header__nav-link">Prozess</a>
-          <a href="#blog" class="header__nav-link">Blog</a>
         </nav>
 
         <div class="header__actions">
@@ -62,7 +61,6 @@
       <a href="#projekte" class="mobile-menu__link">Projekte</a>
       <a href="#ueber-uns" class="mobile-menu__link">Über uns</a>
       <a href="#prozess" class="mobile-menu__link">Prozess</a>
-      <a href="#blog" class="mobile-menu__link">Blog</a>
     </nav>
     <div class="mobile-menu__cta">
       <a href="#kontakt" class="btn btn--primary btn--lg" style="width: 100%;">
@@ -114,38 +112,7 @@
 
           <div class="hero__visual">
             <div class="hero__image">
-              <i data-lucide="code-2"></i>
-            </div>
-
-            <!-- Floating Cards -->
-            <div class="hero__card hero__card--1">
-              <div class="hero__card-icon hero__card-icon--success">
-                <i data-lucide="check-circle"></i>
-              </div>
-              <div class="hero__card-content">
-                <div class="hero__card-title">Projekt abgeschlossen</div>
-                <div class="hero__card-text">E-Commerce Platform</div>
-              </div>
-            </div>
-
-            <div class="hero__card hero__card--2">
-              <div class="hero__card-icon hero__card-icon--primary">
-                <i data-lucide="trending-up"></i>
-              </div>
-              <div class="hero__card-content">
-                <div class="hero__card-title">+45% Performance</div>
-                <div class="hero__card-text">Nach Optimierung</div>
-              </div>
-            </div>
-
-            <div class="hero__card hero__card--3">
-              <div class="hero__card-icon hero__card-icon--warning">
-                <i data-lucide="zap"></i>
-              </div>
-              <div class="hero__card-content">
-                <div class="hero__card-title">Agile Entwicklung</div>
-                <div class="hero__card-text">2-Wochen Sprints</div>
-              </div>
+              <img src="./assets/images/programmierer.png">
             </div>
           </div>
         </div>
@@ -155,13 +122,15 @@
     <!-- ==================== LOGO BAR ==================== -->
     <section class="logos">
       <div class="container">
-        <p class="logos__title">Vertraut von führenden Unternehmen</p>
-        <div class="logos__grid">
-          <div class="logos__item"><img src="./assets/images/sbb.png"></div>
-          <div class="logos__item"><img src="./assets/images/cs.png"></div>
-          <div class="logos__item"><img src="./assets/images/correct.png"></div>
-          <div class="logos__item"><img src="./assets/images/softpay.png"></div>
-          <div class="logos__item"><img src="./assets/images/worldline.jpg"></div>
+        <div class="section__header section__header--center">
+          <h2 class="logos__title">Vertraut von führenden Unternehmen</h2>
+        </div>
+        <div class="logos__track">
+          <div class="logos__item"><img src="./assets/images/sbb.png" alt="SBB"></div>
+          <div class="logos__item"><img src="./assets/images/cs.png" alt="Credit Suisse"></div>
+          <div class="logos__item"><img src="./assets/images/correct.png" alt="Correct"></div>
+          <div class="logos__item"><img src="./assets/images/softpay.png" alt="Softpay"></div>
+          <div class="logos__item"><img src="./assets/images/worldline.jpg" alt="Worldline"></div>
         </div>
       </div>
     </section>
@@ -277,30 +246,30 @@
           </article>
 
           <article class="case-card">
-            <div class="case-card__image">
-              <i data-lucide="factory"></i>
+            <div class="case-card__image" style="background: rgb(239, 166, 28);">
+              <img src="./assets/images/playd.png" style="filter: brightness(0) invert(1);">
             </div>
             <div class="case-card__content">
-              <span class="case-card__tag">Industrie 4.0</span>
-              <h3 class="case-card__title">Digitalisierung der Produktion</h3>
+              <span class="case-card__tag">iOS App</span>
+              <h3 class="case-card__title">playd - Social Music Live-Streaming App</h3>
               <p class="case-card__description">
-                IoT-Integration und Echtzeit-Monitoring für einen Fertigungsbetrieb.
+                A location-based social music platform for iOS that lets users broadcast what they're listening to on Spotify in real-time.
               </p>
               <div class="case-card__stats">
                 <div class="case-card__stat">
-                  <div class="case-card__stat-value">+35%</div>
-                  <div class="case-card__stat-label">Effizienz</div>
+                  <div class="case-card__stat-value">Agora RTC</div>
+                  <div class="case-card__stat-label">Live Audio</div>
                 </div>
                 <div class="case-card__stat">
-                  <div class="case-card__stat-value">-25%</div>
-                  <div class="case-card__stat-label">Ausfallzeiten</div>
+                  <div class="case-card__stat-value">WebSocket</div>
+                  <div class="case-card__stat-label">Real-time</div>
                 </div>
               </div>
             </div>
           </article>
 
           <article class="case-card">
-            <div class="case-card__image">
+            <div class="case-card__image case-card__image--full">
               <img src="./assets/images/softpay%201.PNG">
             </div>
             <div class="case-card__content">
@@ -532,7 +501,6 @@
           <ul class="footer__links">
             <li><a href="#" class="footer__link">Über uns</a></li>
             <li><a href="#" class="footer__link">Karriere</a></li>
-            <li><a href="#" class="footer__link">Blog</a></li>
             <li><a href="#" class="footer__link">Presse</a></li>
             <li><a href="#" class="footer__link">Partner</a></li>
           </ul>
@@ -558,13 +526,27 @@
       <div class="footer__bottom">
         <p>&copy; 2025 Yoveletta. Alle Rechte vorbehalten.</p>
         <div class="footer__legal">
-          <a href="#" class="footer__legal-link">Impressum</a>
-          <a href="#" class="footer__legal-link">Datenschutz</a>
-          <a href="#" class="footer__legal-link">AGB</a>
+          <a href="impressum.html" class="footer__legal-link">Impressum</a>
+          <a href="datenschutz.html" class="footer__legal-link">Datenschutz</a>
+          <a href="agb.html" class="footer__legal-link">AGB</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner__content">
+      <p class="cookie-banner__text">
+        Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten.
+        <a href="cookies.html" class="cookie-banner__link">Mehr erfahren</a>
+      </p>
+      <div class="cookie-banner__actions">
+        <button class="btn btn--secondary btn--sm" id="cookieDecline">Ablehnen</button>
+        <button class="btn btn--primary btn--sm" id="cookieAccept">Akzeptieren</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>

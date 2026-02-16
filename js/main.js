@@ -16,6 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Smooth Scroll for Anchor Links
   initSmoothScroll();
+
+  // Cookie Banner
+  initCookieBanner();
+
+  // Logo Carousel
+  initLogoCarousel();
 });
 
 /**
@@ -107,4 +113,91 @@ function initSmoothScroll() {
       }
     });
   });
+}
+
+/**
+ * Cookie banner consent functionality
+ */
+function initCookieBanner() {
+  const banner = document.getElementById('cookieBanner');
+  const acceptBtn = document.getElementById('cookieAccept');
+  const declineBtn = document.getElementById('cookieDecline');
+
+  if (!banner) return;
+
+  // Check if consent already given
+  if (localStorage.getItem('cookieConsent')) return;
+
+  // Show banner after short delay
+  setTimeout(function() {
+    banner.classList.add('cookie-banner--visible');
+  }, 1000);
+
+  function hideBanner(consent) {
+    localStorage.setItem('cookieConsent', consent);
+    banner.classList.remove('cookie-banner--visible');
+  }
+
+  if (acceptBtn) {
+    acceptBtn.addEventListener('click', function() {
+      hideBanner('accepted');
+    });
+  }
+
+  if (declineBtn) {
+    declineBtn.addEventListener('click', function() {
+      hideBanner('declined');
+    });
+  }
+}
+
+/**
+ * Logo carousel - infinite scroll by rotating logos
+ */
+function initLogoCarousel() {
+  const track = document.querySelector('.logos__track');
+  if (!track) return;
+
+  const items = Array.from(track.querySelectorAll('.logos__item'));
+  if (items.length === 0) return;
+
+  const speed = 0.5; // pixels per frame
+  let position = 0;
+  let isPaused = false;
+  let animationId;
+
+  function getItemWidth(item) {
+    const style = getComputedStyle(track);
+    const gap = parseFloat(style.gap) || 0;
+    return item.offsetWidth + gap;
+  }
+
+  function animate() {
+    if (!isPaused) {
+      position -= speed;
+
+      const firstItem = track.querySelector('.logos__item');
+      const firstItemWidth = getItemWidth(firstItem);
+
+      // When first item is fully scrolled out, move it to the end
+      if (Math.abs(position) >= firstItemWidth) {
+        track.appendChild(firstItem);
+        position += firstItemWidth;
+      }
+
+      track.style.transform = `translateX(${position}px)`;
+    }
+    animationId = requestAnimationFrame(animate);
+  }
+
+  // Pause on hover
+  track.addEventListener('mouseenter', function() {
+    isPaused = true;
+  });
+
+  track.addEventListener('mouseleave', function() {
+    isPaused = false;
+  });
+
+  animate();
 }
